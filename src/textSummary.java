@@ -65,7 +65,7 @@ public class textSummary extends Application {
 		frame.setBottom(bottom);
 		frame.setPadding(new Insets(0, 0, 5, 0));
 		
-		input.textProperty().addListener(new ChangeListener<String>() {
+		input.textProperty().addListener(new ChangeListener<String>() { //recount every time text in input box is changed
 			public void changed(ObservableValue<? extends String> observable,
 					String oldText, String newText){
 				wordTf.setText(""+call.countTokens(newText));
@@ -74,7 +74,7 @@ public class textSummary extends Application {
 			}
 		});
 		
-		browse.setOnAction(new EventHandler<ActionEvent>(){
+		browse.setOnAction(new EventHandler<ActionEvent>(){ //open file browser/chooser upon click
 			public void handle(ActionEvent event){
 				Stage fileWd = new Stage();
 				FileChooser fileChooser = new FileChooser();
