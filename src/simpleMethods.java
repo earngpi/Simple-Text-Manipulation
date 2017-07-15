@@ -1,4 +1,4 @@
-import java.util.StringTokenizer;
+//import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -50,9 +50,13 @@ public class simpleMethods {
 		return count;
 	}*/
 	
-	public int countTokens(String x){ //word counting automatically using tokenizer
+	/*public int countTokens(String x){ //word counting automatically using tokenizer
 		StringTokenizer tokenizer = new StringTokenizer(x);
 		return tokenizer.countTokens();
+	}*/
+	
+	public int wordsSplit(String x){ //word counting automatically using split
+		return x.split("[ ]").length;
 	}
 	
 	/*public int countSent(String x){ //sentence count manually (*ISSUE WHEN SENTENCES END WITH MULTIPLE DELIMITERS E.G. HI!!!!)
