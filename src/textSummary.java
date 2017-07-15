@@ -68,7 +68,7 @@ public class textSummary extends Application {
 		input.textProperty().addListener(new ChangeListener<String>() { //recount every time text in input box is changed
 			public void changed(ObservableValue<? extends String> observable,
 					String oldText, String newText){
-				wordTf.setText(""+call.countTokens(newText));
+				wordTf.setText(""+call.wordsSplit(newText));
 				vowelTf.setText(""+call.countVowels(newText));
 				sentTf.setText(""+call.delimitersSplit(newText));
 			}
