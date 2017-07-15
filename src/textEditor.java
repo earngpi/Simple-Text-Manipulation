@@ -56,7 +56,7 @@ public class textEditor extends Application {
 		Button wordBt = new Button("Word Count");
 		wordBt.setOnAction(new EventHandler<ActionEvent>(){
 			public void handle(ActionEvent event){
-				result.setText("Word Count:  " +call.countTokens(editor.getText()));
+				result.setText("Word Count:  " +call.wordsSplit(editor.getText()));
 			}
 		});
 		
