@@ -12,7 +12,7 @@ public class simpleMethods {
 	
 	public String reverseString(String x){
 		String output = "";
-		for(int i=x.length()-1; i>=0; i--){;
+		for(int i=x.length()-1; i>=0; i--){ //create new String starting from last letter of the input String
 			output += x.charAt(i); //addition of chars create String
 		}
 		return output;
